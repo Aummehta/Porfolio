@@ -1,0 +1,30 @@
+.intro {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &__container{
+        padding-left: responsive-font-size(2);
+    }
+}
+
+@media (max-width: 1080px) {
+    .intro {
+        height: 100vh;
+
+        &__container{
+            padding-left: responsive-font-size(1);
+            margin-bottom: 5rem;
+
+            .heading-primary{
+                line-height: .9;
+            }
+
+            h1:not(:last-child){
+                margin-bottom: responsive-font-size(1);
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Mona-sans", sans-serif;
+    background-color: $color-background;
+    // padding: 0 2rem;
+    width: 100vw;
+    overflow-x: hidden;
+    color: $color-grey-dark-3;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    letter-spacing: -.5px;
+    font-stretch: 110%;
+
+    .main-container {
+        width: 80vw;
+        max-width: 180rem;
+        display: flex;
+        flex-direction: column;
+        // overflow-x: hidden;
+    }
+}
